@@ -25,7 +25,7 @@ function login() {
         let pwd = document.getElementById("pwd").value;
         ajax({
             method: "POST",
-            url: "http://dlszysafe.com/webapi/api/Login/Login",
+            url: "http://192.168.1.2/webapi/api//Login/Login",
             async: true,
             data: {
                 password: pwd,

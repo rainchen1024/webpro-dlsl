@@ -47,11 +47,13 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration:none;
+    color: white;
 }
 .common-nav a img{
     height: 1.5rem;
 }
 
-#common-select-tab{
+.common-select-tab span{
     color: blue;
 }

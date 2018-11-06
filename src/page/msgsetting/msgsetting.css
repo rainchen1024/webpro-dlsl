@@ -1,0 +1,49 @@
+.msg_list_item {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+	padding: 0.8rem;
+	border-bottom: 1px solid lightgray;
+}
+
+.btn_layout {
+	float: right;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-direction: row;
+}
+
+.msg_list_item_icon {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.msg_list_item_text {
+	color: black;
+	flex: 1;
+	word-wrap: break-word;
+	flex-wrap: wrap;
+	overflow-wrap: break-word;
+	margin-left: 0.5rem;
+}
+
+.text_gray_tips {
+	color: gray;
+	font-size: 0.8rem;
+}
+
+.btn_change {
+	background-color: orange;
+	border-radius: 0.5rem;
+	width: 4.2rem;
+	height: 2rem;
+	color: white;
+	padding-bottom: 0.3rem;
+	padding-top: 0.3rem;
+	font-size: 0.8rem;
+}

@@ -36,6 +36,7 @@ function ajax(options) {
 
 	let postData = {};
 	postData.data = options.data;
+	postData.name= "11";
 	if(options.method.toUpperCase() === 'POST') {
 		xhttp.open(options.method, options.url, options.async);
 		xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8');

@@ -4,14 +4,30 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Title</title>
-		<script type="text/javascript">
-			abc = 5;
-
-			alert("1111=" + abc);
-		</script>
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="msgsetting.css" />
+		<link rel="stylesheet" type="text/css" href="../static/common_tab.css" />
+		<script src="msgsetting.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
+		<div class="common-container">
+			<div class="common-title-layout">
+				<img class="common-icon" src="../../res/img/common_top_back.png" onclick="onTitleBackClick()" />
+				<div>短消息设置 </div>
+				<img class="common-icon" src="" />
+			</div>
+			<div class="common-content-layout">
+				<div class="msg_list_item">
+					<img class="msg_list_item_icon" src="../../res/img/common_default_icon.png" />
+					<div class="msg_list_item_text">证件到期提醒消息</div>
+					<div class="btn_layout">
+						<p class="text_gray_tips displaynone">已关注</p>
+						<button class="btn_change" type="button">取消关注</button></div>
+				</div>
+
+			</div>
+		</div>
 
 	</body>
 

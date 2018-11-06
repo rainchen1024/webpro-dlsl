@@ -34,15 +34,14 @@ function ajax(options) {
 	options.success = options.success || function(obj) {};
 	options.failed = options.failed || function(err) {};
 
-	let postData = {};
-	postData.data = options.data;
-	postData.name= "11";
+	// let postData = {};
+	// postData.data = options.data;
 	if(options.method.toUpperCase() === 'POST') {
 		xhttp.open(options.method, options.url, options.async);
 		xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8');
-		xhttp.send("json=" + JSON.stringify(postData));
+		xhttp.send("json=" + JSON.stringify(options.data));
 	} else if(options.method.toUpperCase() === 'GET') {
-		xhttp.open(options.method, options.url + '?json=' + JSON.stringify(postData), options.async);
+		xhttp.open(options.method, options.url + '?json=' + JSON.stringify(options.data), options.async);
 		xhttp.send(null);
 	}
 

@@ -28,8 +28,10 @@ function login() {
             url: "http://192.168.1.2/webapi/api//Login/Login",
             async: true,
             data: {
-                password: pwd,
-                userAccount: user
+                data: {
+                    password: pwd,
+                    userAccount: user
+                }
             },
             success: function (obj) {
                 console.log("---------", obj);

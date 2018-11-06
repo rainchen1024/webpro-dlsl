@@ -19,46 +19,44 @@ var xhttp;
  * @param {function}options.failed ajax请求失败回调函数
  */
 function ajax(options) {
-    if (xhttp == null || xhttp === undefined) {
-        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
-            xhttp = new XMLHttpRequest();
-        } else {// code for IE6, IE5
-            xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-    }
-    options = options || {};
-    options.method = options.method.toUpperCase() || 'POST';
-    options.url = options.url || '';
-    options.async = options.async || true;
-    options.data = options.data || null;
-    options.success = options.success || function (obj) {
-    };
-    options.failed = options.failed || function (err) {
-    };
+	if(xhttp == null || xhttp === undefined) {
+		if(window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+			xhttp = new XMLHttpRequest();
+		} else { // code for IE6, IE5
+			xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+	}
+	options = options || {};
+	options.method = options.method.toUpperCase() || 'POST';
+	options.url = options.url || '';
+	options.async = options.async || true;
+	options.data = options.data || null;
+	options.success = options.success || function(obj) {};
+	options.failed = options.failed || function(err) {};
 
-    let postData = {};
-    postData.data = options.data;
-    if (options.method.toUpperCase() === 'POST') {
-        xhttp.open(options.method, options.url, options.async);
-        xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8');
-        xhttp.send("json=" + JSON.stringify(postData));
-    } else if (options.method.toUpperCase() === 'GET') {
-        xhttp.open(options.method, options.url + '?json=' + JSON.stringify(postData), options.async);
-        xhttp.send(null);
-    }
+	let postData = {};
+	postData.data = options.data;
+	if(options.method.toUpperCase() === 'POST') {
+		xhttp.open(options.method, options.url, options.async);
+		xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8');
+		xhttp.send("json=" + JSON.stringify(postData));
+	} else if(options.method.toUpperCase() === 'GET') {
+		xhttp.open(options.method, options.url + '?json=' + JSON.stringify(postData), options.async);
+		xhttp.send(null);
+	}
 
-    xhttp.onreadystatechange = function () {
-        if (xhttp.readyState === 4 && xhttp.status === 200) {
-            console.log("=======",xhttp.responseText);
-            let data = JSON.parse(xhttp.responseText);
-            if (data.Code === 0) {
-                options.success(data.data);
-            } else {
-                options.failed(data.Info);
-            }
-        } else {
-            // alert("网络错误");
-            options.failed("网络错误");
-        }
-    }
+	xhttp.onreadystatechange = function() {
+		if(xhttp.readyState === 4 && xhttp.status === 200) {
+			console.log("=======", xhttp.responseText);
+			let data = JSON.parse(xhttp.responseText);
+			if(data.Code === 0) {
+				options.success(data.data);
+			} else {
+				options.failed(data.Info);
+			}
+		} else {
+			// alert("网络错误");
+			options.failed("网络错误");
+		}
+	}
 }

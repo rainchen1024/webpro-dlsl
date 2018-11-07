@@ -33,23 +33,26 @@ function ajax(options) {
 	options.data = options.data || null;
 	options.success = options.success || function(obj) {};
 	options.failed = options.failed || function(err) {};
-
+	options.loading = options.loading || function() {};
 	// let postData = {};
 	// postData.data = options.data;
+
 	if(options.method.toUpperCase() === 'POST') {
 		xhttp.open(options.method, options.url, options.async);
 		xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8');
 		xhttp.send("json=" + JSON.stringify(options.data));
+		options.loading();
 	} else if(options.method.toUpperCase() === 'GET') {
 		xhttp.open(options.method, options.url + '?json=' + JSON.stringify(options.data), options.async);
 		xhttp.send(null);
+		options.loading();
 	}
 
 	xhttp.onreadystatechange = function() {
 		if(xhttp.readyState === 4 && xhttp.status === 200) {
 			console.log("=======", xhttp.responseText);
 			let data = JSON.parse(xhttp.responseText);
-			if(data.Code === 0) {
+			if(data.code == 0) {
 				options.success(data.data);
 			} else {
 				options.failed(data.Info);
@@ -60,3 +63,4 @@ function ajax(options) {
 		}
 	}
 }
+

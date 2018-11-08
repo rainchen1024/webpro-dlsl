@@ -19,17 +19,41 @@
 				<div>短消息设置 </div>
 				<img class="common-icon" src="" />
 			</div>
-			<div id="msg_list" class="common-content-layout">
-				<div class="msg_list_item">
+			<ul id="msg_list" class="common-content-layout">
+				<li class="msg_list_item">
 					<img class="msg_list_item_icon" src="../../res/img/common_default_icon.png" />
 					<div class="msg_list_item_text">证件到期提醒消息</div>
 					<div class="btn_layout">
-						<p class="text_gray_tips displaynone">已关注</p>
-						<button class="btn_change" type="button" onclick="onChange(obj[i].modulename,obj[i].modulecode,obj[i].ischoose)">取消关注</button>
+						<div class="text_gray_tips ">已关注</div>
+						<button class="btn_change displaynone" type="button">取消关注</button>
 					</div>
-				</div>
-
-			</div>
+				</li>
+				<li class="msg_list_item">
+					<img class="msg_list_item_icon" src="../../res/img/common_default_icon.png" />
+					<div class="msg_list_item_text">短信提醒消息</div>
+					<div class="btn_layout">
+						<div class="text_gray_tips ">未关注</div>
+						<button class="btn_change displaynone" type="button">取消关注</button>
+					</div>
+				</li>
+				<li class="msg_list_item">
+					<img class="msg_list_item_icon" src="../../res/img/common_default_icon.png" />
+					<div class="msg_list_item_text">隐患通知提醒消息</div>
+					<div class="btn_layout">
+						<p class="text_gray_tips displaynone">已关注</p>
+						<button class="btn_change" type="button">取消关注</button>
+					</div>
+				</li>
+				<li class="msg_list_item">
+					<img class="msg_list_item_icon" src="../../res/img/common_default_icon.png" />
+					<div class="msg_list_item_text">安全检查提醒</div>
+					<div class="btn_layout">
+						<p class="text_gray_tips displaynone">已关注</p>
+						<button class="btn_change" type="button">关注</button>
+					</div>
+				</li>
+			</ul>
+		</div>
 		</div>
 
 	</body>

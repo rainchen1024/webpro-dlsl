@@ -43,6 +43,9 @@
 
 .text_gray_tips {
 	color: gray;
+	width: 4.2rem;
+	height: 2rem;
+	text-align: center;
 	font-size: 0.8rem;
 }
 

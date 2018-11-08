@@ -16,6 +16,9 @@ body {
 }
 
 .common-content-layout {
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	flex: 1;
 	line-height: 2rem;
 	clear: both;

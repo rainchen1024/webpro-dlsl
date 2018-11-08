@@ -52,7 +52,7 @@ function ajax(options) {
 		if(xhttp.readyState === 4 && xhttp.status === 200) {
 			console.log("=======", xhttp.responseText);
 			let data = JSON.parse(xhttp.responseText);
-			if(data.code == 0) {
+			if(data.code == 0 || data.Code == 0) {
 				options.success(data.data);
 			} else {
 				options.failed(data.Info);
@@ -63,4 +63,3 @@ function ajax(options) {
 		}
 	}
 }
-

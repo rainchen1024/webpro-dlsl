@@ -1,13 +1,13 @@
-document.write("<script type='text/javascript' src='../static/xhttp.js'></script>");
-document.write("<script src='../static/jquery-3.0.0.min.js' type='text/javascript'></script>");
+$(document).ready(function(){
+ 	var list_view = document.getElementById("msg_list");
+	queryList();
+});
 
 function onTitleBackClick() {
 	window.history.go(-1);
 }
 
-var list_view = document.getElementById("msg_list");
-
-document.onreadystatechange = function() {
+function queryList() {
 	let jsonInfo = localStorage.getItem("user_info");
 	let userInfo = JSON.parse(jsonInfo);
 	console.log(userInfo);

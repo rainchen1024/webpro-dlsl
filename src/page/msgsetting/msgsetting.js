@@ -80,7 +80,7 @@ function showLoading() {
 }
 
 function showEmptyData(str) {
-//	$("#msg_list").html('<div class="layout_center" onclick="queryList()">暂无数据，点击刷新<div>');
+	//	$("#msg_list").html('<div class="layout_center" onclick="queryList()">暂无数据，点击刷新<div>');
 }
 
 function onChange(name, code, ischoose) {
@@ -89,7 +89,7 @@ function onChange(name, code, ischoose) {
 	var userInfo = JSON.parse(jsonInfo);
 	var mUrl;
 	if(ischoose) {
-		mUrl= "http://192.168.1.2/webapi/api/CheckPlan/cancleAttentionModule";
+		mUrl = "http://192.168.1.2/webapi/api/CheckPlan/cancleAttentionModule";
 	} else {
 		mUrl = "http://192.168.1.2/webapi/api/CheckPlan/addAttentionModule";
 	}
@@ -113,7 +113,7 @@ function onChange(name, code, ischoose) {
 			queryList();
 		},
 		failed: function(str) {
-//			showEmptyData(str);
+			//			showEmptyData(str);
 		}
 	})
 }

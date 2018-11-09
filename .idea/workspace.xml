@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeb504b1-52c1-4801-9633-cdc9f81deb10" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/msgsetting/msgsetting.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/msgsetting/msgsetting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/msgsetting/msgsetting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/msgsetting/msgsetting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/msgsetting/msgsetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/msgsetting/msgsetting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/static/common_tab.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/static/common_tab.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/static/xhttp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/static/xhttp.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +22,11 @@
     <session id="1453106242">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -86,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/page/static/common_tab.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -303,7 +301,8 @@
       <workItem from="1541473633899" duration="3371000" />
       <workItem from="1541481310581" duration="1960000" />
       <workItem from="1541483709935" duration="6135000" />
-      <workItem from="1541670525420" duration="636000" />
+      <workItem from="1541670525420" duration="892000" />
+      <workItem from="1541679607921" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1541475165911</created>
@@ -326,11 +325,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541670558238</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="提交">
+      <created>1541679349773</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1541679349773</updated>
+    </task>
+    <task id="LOCAL-00005" summary="提交">
+      <created>1541679567366</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541679567366</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12102000" />
+    <option name="totallyTimeSpent" value="12968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -466,7 +479,7 @@
     <entry file="file://$PROJECT_DIR$/src/page/static/common_tab.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
         </state>
       </provider>
     </entry>

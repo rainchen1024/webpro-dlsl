@@ -51,7 +51,7 @@ function ajax(options) {
 	xhttp.onreadystatechange = function() {
 		if(xhttp.readyState === 4 && xhttp.status === 200) {
 			console.log("=======", xhttp.responseText);
-			let data = JSON.parse(xhttp.responseText);
+			var data = JSON.parse(xhttp.responseText);
 			if(data.code == 0 || data.Code == 0) {
 				options.success(data.data);
 			} else {

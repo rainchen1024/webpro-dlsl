@@ -9,13 +9,18 @@
 	border-bottom: 1px solid lightgray;
 }
 
+ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
 .btn_layout {
 	float: right;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	flex-direction: row;
 }
 
 .layout_center {
@@ -58,4 +63,5 @@
 	padding-bottom: 0.3rem;
 	padding-top: 0.3rem;
 	font-size: 0.8rem;
+	outline: none;
 }

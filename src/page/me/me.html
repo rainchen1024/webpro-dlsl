@@ -6,6 +6,8 @@
 		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="me.css" />
 		<link rel="stylesheet" type="text/css" href="../static/common_tab.css" />
+		<script type="text/javascript" src="../static/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript" src="../static/xhttp.js"></script>
 		<script type="text/javascript" src="me.js"></script>
 		<title>Title</title>
 	</head>
@@ -20,6 +22,37 @@
 
 			<div class="common-content-layout">
 
+				<div id="head_layout">
+					<img id="user_icon" src="../../res/img/common_default_icon.png" />
+					<div id="user_name">12121</div>
+				</div>
+				<div class="bg_gray_space"></div>
+				<div class="msg_list_item">
+					<img class="msg_list_item_icon" src="../../res/img/me_about.png" />
+					<div class="msg_list_item_text">关于</div>
+					<img class="right_arrow" src="../../res/img/right_arrow.png" />
+				</div>
+				<div class="msg_list_item">
+					<img class="msg_list_item_icon" src="../../res/img/not_on_spot_handle.png" />
+					<div class="msg_list_item_text">意见反馈</div>
+					<img class="right_arrow" src="../../res/img/right_arrow.png" />
+				</div>
+				<div class="msg_list_item">
+					<img class="msg_list_item_icon" src="../../res/img/new_problem_select.png" />
+					<div class="msg_list_item_text">检查更新</div>
+					<img class="right_arrow" src="../../res/img/right_arrow.png" />
+				</div>
+				<div class="msg_list_item" onclick="javascript:location.href='../msgsetting/msgsetting.html'">
+					<img class="msg_list_item_icon" src="../../res/img/new_setting.png" />
+					<div class="msg_list_item_text">设置</div>
+					<img class="right_arrow" src="../../res/img/right_arrow.png" />
+				</div>
+				<div class="bg_gray_space"></div>
+				<div class="msg_list_item" id="item_logout">
+					<img class="msg_list_item_icon" src="../../res/img/me_logout.png" />
+					<div class="msg_list_item_text">退出</div>
+					<img class="right_arrow" src="../../res/img/right_arrow.png" />
+				</div>
 			</div>
 
 			<div class="common-nav">

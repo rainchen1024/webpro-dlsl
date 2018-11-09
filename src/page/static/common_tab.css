@@ -23,6 +23,7 @@ body {
 	flex: 1;
 	line-height: 2rem;
 	clear: both;
+	background-color: white;
 	overflow-x: hidden;
 	overflow-y: auto;
 	white-space: nowrap;
@@ -49,7 +50,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	height: 4rem;
-	background: lightgray;
+	background: antiquewhite;
 	color: white;
 }
 
@@ -67,4 +68,8 @@ body {
 
 .common-select-tab span {
 	color: blue;
+}
+
+span {
+	color: darkslategray
 }

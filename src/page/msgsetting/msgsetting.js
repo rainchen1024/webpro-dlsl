@@ -66,7 +66,6 @@ function showViewData(obj) {
 
 function bindDomClick() {
 	$("#msg_list li").on("click", ".btn_change", function() {
-
 		var index = $(this).parent().parent().index();
 		console.log("lenght = " + $(this).length + "点击了按钮，index = " + index);
 		onChange(mDataList[index].modulename, mDataList[index].modulecode, mDataList[index].ischoose);
@@ -74,7 +73,11 @@ function bindDomClick() {
 		//		alert("lenght = " + $(this).length + "点击了按钮，index = " + index);
 	});
 }
-
+function showErrorImg(){
+	$(".msg_list_item_icon").one("error", function(e) { 
+		$(this).attr("src", "../../res/img/common_default_icon.png");
+	});
+}
 function showLoading() {
 	$("#msg_list").html("<div class='layout_center'>加载中...</div>");
 }
